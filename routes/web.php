@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PostContoller@index');
+Route::get('/posts/{post}', 'PostContoller@show');
 /*Route::get('/', function(){
     return view('posts/index');
 });*/
