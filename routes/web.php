@@ -11,4 +11,9 @@
 |
 */
 
-Route::get('/posts', 'PostContoller@index');
+Route::get('/', 'PostContoller@index');
+/*Route::get('/', function(){
+    return view('posts/index');
+});*/
+
+?>
