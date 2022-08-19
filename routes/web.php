@@ -15,6 +15,8 @@ Route::get('/', 'PostContoller@index');
 Route::get('/posts/create', 'PostContoller@create');
 Route::post('/posts', 'PostContoller@store');
 Route::get('/posts/{post}', 'PostContoller@show');
+Route::get('/posts/{post}/edit', 'PostContoller@edit');
+Route::put('/posts/{post}', 'PostContoller@update');
 /*Route::get('/', function(){
     return view('posts/index');
 });*/
