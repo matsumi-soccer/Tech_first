@@ -17,6 +17,8 @@ Route::post('/posts', 'PostContoller@store');
 Route::get('/posts/{post}', 'PostContoller@show');
 Route::get('/posts/{post}/edit', 'PostContoller@edit');
 Route::put('/posts/{post}', 'PostContoller@update');
+Route::get('/categories/{category}', 'CategoryController@index');
+Route::delete('/posts/{post}', 'PostContoller@delete');
 /*Route::get('/', function(){
     return view('posts/index');
 });*/
